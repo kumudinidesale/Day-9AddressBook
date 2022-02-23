@@ -78,7 +78,8 @@ public class AddressBook {
 		System.out.println("Welcome to Address Book Program in AddressBookMain class");
 		AddressBook addresbook = new AddressBook();
 		addresbook.addPersonContact();
-
+                addressbook.editPerson();
+		addressbook.deletePerson();
 	}// end of main
 
 }/// end of class
