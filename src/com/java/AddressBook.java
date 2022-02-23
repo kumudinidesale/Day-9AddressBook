@@ -59,6 +59,21 @@ public class AddressBook {
 		}
 	}
 
+	public void deletePerson() {
+		System.out.println("Enter name to Delete");
+		String s = scanner.next();
+
+		for (int i = 0; i < personInformation.size(); i++) {
+			Contact person = (Contact) personInformation.get(i);
+			if (s.equals(person.getFirstName())) {
+				System.out.println(personInformation);
+				personInformation.remove(i);
+				System.out.println(personInformation.isEmpty());
+			}
+		}
+
+	}
+
 	public static void main(String[] args) {
 		System.out.println("Welcome to Address Book Program in AddressBookMain class");
 		AddressBook addresbook = new AddressBook();
