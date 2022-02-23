@@ -18,7 +18,7 @@ public class Contact {
 		this.address = address;
 		this.city = city;
 		this.state = state;
-		this.zip = zip2;
+		this.zip = zip;
 		this.phoneNumber = phoneNumber;
 		this.email = email;
 	}
